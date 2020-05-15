@@ -3,17 +3,17 @@ let cheerio = require('cheerio');
 let mysql = require('mysql');
 let async = require('async');
 let connection = mysql.createConnection({
-  host     : 'admin.c7moo3vcpuqx.ap-northeast-2.rds.amazonaws.com',
-  user     : 'admin',
-  password : '1q2w3e4r',
-  port     : '3306',
-  database : 'vote',
+  host     : '',
+  user     : '',
+  password : '',
+  port     : '',
+  database : '',
 });
 
 // 선거 코드 조회 //
 function voteCodeApi(){
     const $url = 'http://apis.data.go.kr/9760000/CommonCodeService/getCommonSgCodeList';
-    const $serviceKey = 'y08K8S5k7cbr1Qif01f5izOmxccvY6Ez%2FRUeHWMyQfP04TODiMtIT%2BW1RWnWXTDqKOAZnkzQQf2Dvoq7VZ9QuA%3D%3D';
+    const $serviceKey = '';
     const $pageNo = '1';
     const $numOfRows = '300';
     const $api_url = $url + '?serviceKey=' +$serviceKey +'&pageNo='+ $pageNo  + '&numOfRows=' + $numOfRows;
@@ -42,7 +42,7 @@ function voteCodeApi(){
 
 function candidateInfoApi(){
     const $url = 'http://apis.data.go.kr/9760000/PofelcddInfoInqireService/getPofelcddRegistSttusInfoInqire';
-    const $serviceKey = 'y08K8S5k7cbr1Qif01f5izOmxccvY6Ez%2FRUeHWMyQfP04TODiMtIT%2BW1RWnWXTDqKOAZnkzQQf2Dvoq7VZ9QuA%3D%3D';
+    const $serviceKey = '';
     const $pageNo = '1';
     const $numOfRows = '350';
     const $sgId = '20200415';
@@ -91,7 +91,7 @@ function candidateInfoApi(){
 function jobCodeApi(){
     console.log("a")
     const $url = 'http://apis.data.go.kr/9760000/CommonCodeService/getCommonJobCodeList';
-    const $serviceKey = 'y08K8S5k7cbr1Qif01f5izOmxccvY6Ez%2FRUeHWMyQfP04TODiMtIT%2BW1RWnWXTDqKOAZnkzQQf2Dvoq7VZ9QuA%3D%3D';
+    const $serviceKey = '';
     const $pageNo = '1';
     const $numOfRows = '10';
     const $sgId = '20200415';
@@ -119,7 +119,7 @@ function jobCodeApi(){
 //선거공약정보조회
 function votePromiseApi(){
     const $url = 'http://apis.data.go.kr/9760000/ElecPrmsInfoInqireService/getCnddtElecPrmsInfoInqire';
-    const $serviceKey = 'y08K8S5k7cbr1Qif01f5izOmxccvY6Ez%2FRUeHWMyQfP04TODiMtIT%2BW1RWnWXTDqKOAZnkzQQf2Dvoq7VZ9QuA%3D%3D';
+    const $serviceKey = '';
     const $pageNo = '1';
     const $numOfRows = '3000';
     const $sgId = '20200415';

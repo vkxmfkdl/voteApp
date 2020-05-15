@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname+'/'));
 
 let connection = mysql.createConnection({
-  host     : 'admin.c7moo3vcpuqx.ap-northeast-2.rds.amazonaws.com',
-  user     : 'admin',
-  password : '1q2w3e4r',
-  port     : '3306',
-  database : 'vote',
+  host     : '',
+  user     : '',
+  password : '',
+  port     : '',
+  database : '',
 });
 
 app.get('/', (req, res) => {
