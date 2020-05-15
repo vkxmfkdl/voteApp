@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:weightSum="10"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/personal_Image"
+        android:layout_width="97dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="143dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/child_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingBottom="2dip"
+            android:text="이름"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/child_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="출생월일"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/child_jdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="정당"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/child_sdsggName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="소속지역"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
