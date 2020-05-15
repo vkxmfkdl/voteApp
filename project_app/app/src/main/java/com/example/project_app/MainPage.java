@@ -92,11 +92,9 @@ public class MainPage extends AppCompatActivity {
                 int id = menuItem.getItemId();
                 String title = menuItem.getTitle().toString();
                 if (id == R.id.main) {
-                    Toast.makeText(context, title + "ㅇㅇ", Toast.LENGTH_LONG).show();  //화면전환으로 나중에 수정
                     Intent intent = new Intent(getApplicationContext(), MainPage.class);
                     startActivity(intent);
                 } else if (id == R.id.result) {
-                    Toast.makeText(context, title + "ㅇㅇ", Toast.LENGTH_LONG).show();   //화면전환으로 나중에 수정
                     Intent intent = new Intent(getApplicationContext(), Resultview.class);
                     intent.putExtra("howsearch", howsearch);
                     intent.putExtra("searchtxt", searchtxt);
