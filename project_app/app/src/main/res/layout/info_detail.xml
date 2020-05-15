@@ -94,7 +94,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@android:color/background_light"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -130,7 +129,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -166,7 +164,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -202,7 +199,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -238,7 +234,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -265,7 +260,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.058"
+            android:layout_weight="0.08"
             android:orientation="horizontal"
             android:padding="3dp"
             android:weightSum="1">
@@ -274,7 +269,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -310,7 +304,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -337,7 +330,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.058"
+            android:layout_weight="0.08"
             android:orientation="horizontal"
             android:padding="3dp"
             android:weightSum="1">
@@ -346,7 +339,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -373,7 +365,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.058"
+            android:layout_weight="0.08"
             android:orientation="horizontal"
             android:padding="3dp"
             android:weightSum="1">
@@ -382,7 +374,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -418,7 +409,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -462,7 +452,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
                 android:padding="3dp"
                 app:srcCompat="@drawable/icon1" />
 
@@ -485,43 +474,7 @@
 
         </LinearLayout>
 
-        <!--활동 뉴스-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.058"
-            android:orientation="horizontal"
-            android:padding="3dp"
-            android:weightSum="1">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.1"
-                android:background="@color/cardview_light_background"
-                android:padding="3dp"
-                app:srcCompat="@drawable/icon1" />
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="0.2"
-                android:gravity="center_vertical"
-                android:text="활동뉴스"
-                android:textColor="@color/colorPrimary"
-                android:textSize="15dp" />
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.7"
-                android:gravity="center_vertical"
-                android:textColor="@color/colorPrimary" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView

@@ -113,9 +113,6 @@ public class Resultview extends AppCompatActivity {
                     intent.putExtra("searchtxt",searchtxt);
                     startActivity(intent);
                 }
-                else if(id == R.id.help){
-
-                }
                 return true;
             }
         });

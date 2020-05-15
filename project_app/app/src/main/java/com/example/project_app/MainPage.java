@@ -101,11 +101,7 @@ public class MainPage extends AppCompatActivity {
                     intent.putExtra("howsearch", howsearch);
                     intent.putExtra("searchtxt", searchtxt);
                     startActivity(intent);
-                } else if (id == R.id.help) {
-                    Toast.makeText(context, title + "ㅇㅇ", Toast.LENGTH_LONG).show();   //화면전환으로 나중에 수정
-
                 }
-
                 return true;
             }
         });
@@ -430,11 +426,6 @@ public class MainPage extends AppCompatActivity {
                         intent.putExtra("howsearch", howsearch);
                         intent.putExtra("searchtxt", searchtxt);
                         startActivity(intent);
-                    } else if (howsearch == "지역구") {
-                        Intent intent = new Intent(getApplicationContext(), Resultview.class);
-                        intent.putExtra("howsearch", howsearch);
-                        intent.putExtra("searchtxt", searchtxt);
-                        startActivity(intent);
                     }
                 }
             }
@@ -511,7 +502,7 @@ public class MainPage extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     protected Dialog onCreateDialog(int id){
-        final String [] items = {"이름", "당이름", "지역구"};
+        final String [] items = {"이름", "당이름"};
         final AlertDialog.Builder builder = new AlertDialog.Builder(MainPage.this);
         builder.setTitle("검색어 선택");
         builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {

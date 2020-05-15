@@ -11,10 +11,5 @@
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
             android:icon="@drawable/icon1"
             android:title="검색결과" />
-        <item
-            android:id="@+id/help"
-            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-            android:icon="@drawable/icon1"
-            android:title="도움말" />
     </group>
 </menu>

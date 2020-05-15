@@ -130,8 +130,7 @@
 
                         <Spinner
                             android:id="@+id/ageStart"
-                            android:layout_width="wrap_content"
-
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content" />
 
                         <TextView
@@ -141,7 +140,7 @@
 
                         <Spinner
                             android:id="@+id/ageEnd"
-                            android:layout_width="wrap_content"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
 
@@ -158,7 +157,7 @@
 
                         <Spinner
                             android:id="@+id/sdName"
-                            android:layout_width="wrap_content"
+                            android:layout_width="210dp"
                             android:layout_height="wrap_content" />
                     </TableRow>
 

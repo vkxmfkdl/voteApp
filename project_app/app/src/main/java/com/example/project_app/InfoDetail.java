@@ -41,6 +41,8 @@ public class InfoDetail extends AppCompatActivity {
     private String huboid="";
     private String sgTypeCodeStr="";
     private String jdNameStr="";
+    String howsearch="";
+    String searchtxt="";
     Context context = this;
 
     @Override
@@ -70,9 +72,9 @@ public class InfoDetail extends AppCompatActivity {
                 }
                 else if(id == R.id.result){
                     Intent intent = new Intent(getApplicationContext(),Resultview.class);
+                    intent.putExtra("howsearch",howsearch);
+                    intent.putExtra("searchtxt",searchtxt);
                     startActivity(intent);
-                }
-                else if(id == R.id.help){
                 }
                 return true;
             }
